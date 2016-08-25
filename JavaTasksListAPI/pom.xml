@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.douglasjunior</groupId>
-    <artifactId>JavaTodoApi</artifactId>
+    <artifactId>JavaTasksListAPI</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>JavaTodoApi</name>
+    <name>JavaTasksListAPI</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -15,7 +15,7 @@
         <javaee.version>7.0</javaee.version>
         <java.version>1.8</java.version>
     </properties>
-    
+
     <dependencies>
         <dependency>
             <groupId>javax</groupId>

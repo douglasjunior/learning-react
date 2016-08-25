@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package com.github.douglasjunior.javatodoapi;
 
 import java.io.IOException;
@@ -11,31 +16,30 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  *
  * @author douglas
  */
-@WebFilter(filterName = "ACAFilter", urlPatterns = {"/rest/*"})
-public class ACAFilter implements Filter {
+@WebFilter(filterName = "AuthFilter", urlPatterns = {"/rest/*"})
+public class AuthFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
+       
     }
 
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
-        System.out.println("ACAOFilter");
-        HttpServletResponse res = (HttpServletResponse) response;
-        res.addHeader("Access-Control-Allow-Origin", "*");
-        res.addHeader("Access-Control-Allow-Headers", "Content-Type");
-        res.addHeader("Access-Control-Allow-Methods", "DELETE,PUT");
+        System.out.println("AuthFilter");
         chain.doFilter(request, response);
     }
 
     @Override
     public void destroy() {
+       
     }
+    
+    
     
 }
