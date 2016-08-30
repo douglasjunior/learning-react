@@ -1,6 +1,6 @@
-# React + Webpack + CSS modules (CSCC) + React-Toolbox
+# React + Webpack + CSS modules (SCSS) + React-Toolbox
 
-A sample project with React + Webpack + CSS Modules (CSCC) + React-Toolbox based on https://github.com/css-modules/webpack-demo and https://github.com/react-toolbox/react-toolbox-example
+A sample project with React + Webpack + CSS Modules (SCSS) + React-Toolbox based on https://github.com/css-modules/webpack-demo and https://github.com/react-toolbox/react-toolbox-example
 
 ##Getting Started
 
