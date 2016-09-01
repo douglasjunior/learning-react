@@ -23,22 +23,22 @@ module.exports = [
 	},
 	{
 		test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/,
-		loader: "url?limit=10000&mimetype=application/octet-stream"
+		loader: "url?limit=5000&mimetype=application/octet-stream"
 	},
 	{
 		test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
-		loader: "url?limit=10000&mimetype=image/svg+xml"
+		loader: "url?limit=5000&mimetype=image/svg+xml"
 	},
 	{
 		test: /\.gif/,
-		loader: "url-loader?limit=10000&mimetype=image/gif"
+		loader: "url-loader?limit=5000&mimetype=image/gif"
 	},
 	{
 		test: /\.jpg/,
-		loader: "url-loader?limit=10000&mimetype=image/jpg"
+		loader: "url-loader?limit=5000&mimetype=image/jpg"
 	},
 	{
 		test: /\.png/,
-		loader: "url-loader?limit=10000&mimetype=image/png"
+		loader: "url-loader?limit=5000&mimetype=image/png"
 	}
 ];

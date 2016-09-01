@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {Button, IconButton} from 'react-toolbox/lib/button';
+import Input from 'react-toolbox/lib/input';
 
 import styles from './../styles/Home.scss';
 
@@ -35,6 +36,14 @@ export default class Home extends React.Component {
             This is a styled paragraph.
           </p>
         </div>
+        <section>
+          <Input type='text' label='Name' name='name'  maxLength={16} />
+          <Input type='text' label='Disabled field' disabled />
+          <Input type='text' multiline label='Multiline' maxLength={20}  />
+          <Input type='email' label='Email address' icon='email'  />
+          <Input type='tel' label='Phone' name='phone' icon='phone'  />
+          <Input type='text'  label='Required Field' hint='With Hint' required  icon='share' />
+        </section>
       </div>
     );
   }

@@ -52,6 +52,10 @@ module.exports = {
 		port: PORT,
 		host: HOST
 	},
+	sassLoader: {
+	 	data: '@import "styles/Theme.scss";',
+	 	includePaths: [path.resolve(__dirname, './src/')]
+ 	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),
 		new webpack.HotModuleReplacementPlugin(),

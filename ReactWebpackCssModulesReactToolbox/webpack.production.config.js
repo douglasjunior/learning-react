@@ -36,6 +36,10 @@ module.exports = {
 	module: {
 		loaders
 	},
+	sassLoader: {
+		data: '@import "styles/Theme.scss";',
+		includePaths: [path.resolve(__dirname, './src/')]
+	},
 	plugins: [
 		new WebpackCleanupPlugin(),
 		new webpack.DefinePlugin({
@@ -57,7 +61,7 @@ module.exports = {
 		}),
 		new HtmlWebpackPlugin({
 			template: './src/template.html',
-			title: 'Saframax Web Manager'
+			title: 'React + Webpack + React-toolbox'
 		})
 	]
 };
